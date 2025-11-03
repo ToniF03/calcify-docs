@@ -7,6 +7,7 @@ Common questions and answers about Calcify.
 ### What is Calcify?
 
 Calcify is a powerful calculator application for Windows that goes beyond basic arithmetic. It supports:
+
 - Mathematical expressions and functions
 - Unit conversions (length, weight, temperature, etc.)
 - Currency conversion with live exchange rates
@@ -24,6 +25,7 @@ Yes, Calcify is completely free and open-source under the MIT License.
 ### What operating systems does Calcify support?
 
 Calcify runs on Windows 7 or later, including:
+
 - Windows 7, 8, 8.1, 10, 11
 - Windows Server 2008 R2 and later
 
@@ -34,6 +36,7 @@ Calcify does not currently support macOS or Linux.
 ### How is Calcify different from the Windows Calculator?
 
 Calcify offers several advantages:
+
 - **Text-based interface** - Type calculations like in a text editor
 - **Multi-line calculations** - Work on multiple problems at once
 - **Variables** - Store and reuse values
@@ -60,11 +63,13 @@ Yes! Download the portable version, which doesn't require installation. Just ext
 ### How do I uninstall Calcify?
 
 **Windows Settings:**
+
 1. Open Settings (`Win + I`)
 2. Go to Apps → Apps & features
 3. Find Calcify and click Uninstall
 
 **Control Panel:**
+
 1. Open Control Panel
 2. Programs → Programs and Features
 3. Right-click Calcify → Uninstall
@@ -88,6 +93,7 @@ Press `Ctrl + S` or click File → Save. Calcify saves files in `.calc` format (
 ### Can I open my old calculator files?
 
 Yes, Calcify can open:
+
 - `.calc` files (native format)
 - `.txt` files (plain text)
 - Any text-based format
@@ -98,11 +104,11 @@ Simply drag and drop or use File → Open.
 
 ### How do I insert comments?
 
-Use `//` for single-line comments:
+Use `#` for single-line comments:
 
 ```
-// This is a comment
-10 + 5    // This calculates 15
+# This is a comment
+10 + 5    # This calculates 15
 ```
 
 ---
@@ -121,12 +127,12 @@ result = x + y    // 30
 
 ### How do I convert units?
 
-Use the `to` keyword:
+Use the `to`, `in`, `as` or `into` keyword:
 
 ```
 10 km to miles
-100 pounds to kg
-25 °C to °F
+100 pounds as kg
+25 °C into °F
 ```
 
 See [Unit Conversions Guide](../features/unit-conversions.md) for all supported units.
@@ -135,13 +141,14 @@ See [Unit Conversions Guide](../features/unit-conversions.md) for all supported 
 
 ### How often are currency exchange rates updated?
 
-By default, rates update every 3 hours. You can change this in Settings → Calculations → Currency Update Frequency, or manually update via Settings.
+By default, rates update every day. You can change this in Settings → Calculations → Currency Update Frequency, or manually update via Settings.
 
 ---
 
 ### Can I use Calcify offline?
 
 Yes! All features work offline except:
+
 - Currency conversions (uses last fetched rates)
 - Automatic update checks
 
@@ -160,6 +167,7 @@ Yes! All features work offline except:
 ### Can I change the font size?
 
 Yes, in Settings → Appearance → Font Size, or use:
+
 - `Ctrl + +` to zoom in
 - `Ctrl + -` to zoom out
 - `Ctrl + 0` to reset
@@ -177,6 +185,7 @@ Press `Ctrl + P` or File → Print. You can preview before printing.
 ### What mathematical functions are supported?
 
 Calcify supports:
+
 - **Basic:** +, -, *, /, ^, %
 - **Trigonometry:** sin, cos, tan, asin, acos, atan
 - **Logarithms:** log, ln, log2
@@ -206,6 +215,7 @@ See [Date and Time Guide](../features/date-time.md).
 ### What currencies are supported?
 
 Calcify supports 30+ major currencies including:
+
 - USD, EUR, GBP, JPY, CHF
 - CAD, AUD, NZD, CNY, INR
 - And many more!
@@ -216,7 +226,7 @@ See [Currency Conversion Guide](../features/currency-conversion.md).
 
 ### Can I do hexadecimal or binary conversions?
 
-Currently, Calcify focuses on decimal numbers. Hex/binary support may be added in future versions.
+Yes, you can!
 
 ---
 
@@ -299,19 +309,16 @@ Not yet, but this is planned for a future release. Follow the project on GitHub 
 
 **Try these:**
 
-1. **Disable auto-calculate** - Settings → Calculations → Auto-Calculate
-2. **Reduce history** - Settings → Advanced → Maximum History
-3. **Performance mode** - Settings → Advanced → Performance Mode
-4. **Close other programs** - Free up system resources
+1. **Reduce history** - Settings → Advanced → Maximum History
+2. **Close other programs** - Free up system resources
 
 ---
 
 ### Large files are slow to open
 
 This is normal for very large files (>1 MB). Consider:
+
 - Splitting into smaller files
-- Disabling syntax highlighting for large files
-- Using Performance Mode
 
 ---
 
@@ -320,12 +327,14 @@ This is normal for very large files (>1 MB). Consider:
 ### How do I update Calcify?
 
 Calcify checks for updates automatically on startup. When available:
+
 1. A notification appears
 2. Click "Download Update"
 3. Update installs automatically
 4. Restart Calcify
 
 **Manual update:**
+
 - Help → Check for Updates
 - Or download from [GitHub Releases](https://github.com/ToniF03/Calcify/releases)
 
@@ -350,6 +359,7 @@ However, we recommend keeping automatic updates enabled for bug fixes and new fe
 ### Where are my settings stored?
 
 Settings are stored in:
+
 ```
 %APPDATA%\Calcify\settings.json
 ```
@@ -360,20 +370,14 @@ You can backup this file to preserve your settings.
 
 ### Does Calcify collect my data?
 
-Calcify may collect anonymous usage statistics if enabled (opt-in). This includes:
-- Which features are used
-- Crash reports
-- Performance metrics
-
-**No personal data or calculation content is collected.**
-
-Disable in Settings → Privacy → Send Anonymous Usage Data
+Calcify does not collect anonymous usage statistics. This includes:
 
 ---
 
 ### Where are auto-backups saved?
 
 Auto-backups are stored in:
+
 ```
 %APPDATA%\Calcify\Backups\
 ```
@@ -387,6 +391,7 @@ Configure in Settings → Backup and Restore
 ### How can I contribute?
 
 See our [Contributing Guide](../development/contributing.md) for:
+
 - Reporting bugs
 - Suggesting features
 - Submitting code
@@ -397,6 +402,7 @@ See our [Contributing Guide](../development/contributing.md) for:
 ### I found a bug. Where do I report it?
 
 Report bugs on [GitHub Issues](https://github.com/ToniF03/Calcify/issues) with:
+
 - Description of the bug
 - Steps to reproduce
 - Expected vs actual behavior
@@ -408,9 +414,11 @@ Report bugs on [GitHub Issues](https://github.com/ToniF03/Calcify/issues) with:
 ### Can I request a feature?
 
 Absolutely! Open a feature request on [GitHub Issues](https://github.com/ToniF03/Calcify/issues) and describe:
+
 - What problem it solves
 - How it should work
 - Why others would benefit
+- Also see [Contributing](../development/contributing.md) for more information
 
 ---
 
@@ -419,6 +427,7 @@ Absolutely! Open a feature request on [GitHub Issues](https://github.com/ToniF03
 ### What license is Calcify under?
 
 Calcify is licensed under the [MIT License](https://opensource.org/licenses/MIT), which allows:
+
 - ✅ Commercial use
 - ✅ Modification
 - ✅ Distribution
@@ -452,6 +461,7 @@ Yes, under the MIT License you can modify and redistribute, provided you include
 ### Is there a user manual?
 
 Yes! This documentation serves as the complete user manual. Start with:
+
 - [Quick Start Guide](../quick-start.md)
 - [User Interface Guide](../user-interface.md)
 - [Features Overview](../features/basic-calculations.md)

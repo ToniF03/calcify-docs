@@ -9,11 +9,13 @@ Thank you for your interest in contributing to Calcify! This guide will help you
 Found a bug? Help us fix it!
 
 **Before Reporting:**
+
 - Check [existing issues](https://github.com/ToniF03/Calcify/issues)
 - Try with the latest version
 - Verify it's reproducible
 
 **How to Report:**
+
 1. Go to [GitHub Issues](https://github.com/ToniF03/Calcify/issues)
 2. Click **New Issue**
 3. Select **Bug Report** template
@@ -26,6 +28,7 @@ Found a bug? Help us fix it!
    - System information (Windows version, Calcify version)
 
 **Example Bug Report:**
+
 ```markdown
 ## Bug Description
 Currency conversion returns incorrect results
@@ -53,11 +56,13 @@ Shows 0 EUR
 Have an idea to improve Calcify?
 
 **Before Suggesting:**
+
 - Check [existing feature requests](https://github.com/ToniF03/Calcify/issues?q=is%3Aissue+label%3Aenhancement)
 - Ensure it aligns with Calcify's purpose
 - Consider if others would benefit
 
 **How to Suggest:**
+
 1. Go to [GitHub Issues](https://github.com/ToniF03/Calcify/issues)
 2. Click **New Issue**
 3. Select **Feature Request** template
@@ -68,6 +73,7 @@ Have an idea to improve Calcify?
    - Additional context
 
 **Example Feature Request:**
+
 ```markdown
 ## Feature Description
 Add support for hexadecimal/binary number conversions
@@ -95,6 +101,7 @@ Low to Medium
 Documentation is always welcome!
 
 **What to Document:**
+
 - Fix typos and errors
 - Add examples
 - Clarify confusing sections
@@ -102,6 +109,7 @@ Documentation is always welcome!
 - Add tutorials
 
 **How to Contribute:**
+
 1. Fork the repository
 2. Edit files in `docs/` folder
 3. Submit a pull request
@@ -117,13 +125,16 @@ Want to contribute code? Great!
 ### Fork and Clone
 
 1. **Fork** the repository on GitHub
+
 2. **Clone** your fork:
+   
    ```powershell
    git clone https://github.com/YOUR-USERNAME/Calcify.git
    cd Calcify
    ```
 
 3. **Add upstream remote:**
+   
    ```powershell
    git remote add upstream https://github.com/ToniF03/Calcify.git
    ```
@@ -145,6 +156,7 @@ git checkout -b fix/bug-description
 ```
 
 **Branch Naming:**
+
 - `feature/feature-name` - New features
 - `fix/bug-description` - Bug fixes
 - `docs/what-changed` - Documentation
@@ -168,6 +180,7 @@ git commit -m "Add feature: hex/binary conversion support"
 ```
 
 **Commit Message Format:**
+
 ```
 <type>: <short summary>
 
@@ -177,6 +190,7 @@ Fixes #<issue-number>
 ```
 
 **Types:**
+
 - `feat:` New feature
 - `fix:` Bug fix
 - `docs:` Documentation
@@ -186,6 +200,7 @@ Fixes #<issue-number>
 - `chore:` Maintenance
 
 **Example:**
+
 ```
 feat: Add hexadecimal number conversion
 
@@ -219,6 +234,7 @@ git push origin feature/your-feature-name
 Follow Microsoft C# coding conventions:
 
 **Naming Conventions:**
+
 ```csharp
 // Classes: PascalCase
 public class CalculationEngine { }
@@ -243,6 +259,7 @@ public const int MaxValue = 100;
 ```
 
 **Formatting:**
+
 ```csharp
 // Braces on new line (Allman style)
 if (condition)
@@ -268,6 +285,7 @@ Method(a, b);  // Space after commas
 ```
 
 **Comments:**
+
 ```csharp
 /// <summary>
 /// Calculate the sum of two numbers
@@ -295,7 +313,7 @@ public int Add(int a, int b)
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Calcify">
-    
+
     <Grid>
         <TextBox Name="EditorTextBox"
                  FontFamily="Consolas"
@@ -405,6 +423,7 @@ Describe testing performed:
 ## Recognition
 
 Contributors are credited in:
+
 - CONTRIBUTORS.md file
 - Release notes
 - About dialog in application
@@ -415,8 +434,6 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 ## Questions?
 
-- **Discord:** [Join our community](https://discord.gg/MfHHgYtWub)
-- **Email:** [Contact maintainer](mailto:contact@example.com)
 - **Issues:** [Ask on GitHub](https://github.com/ToniF03/Calcify/issues)
 
 ---

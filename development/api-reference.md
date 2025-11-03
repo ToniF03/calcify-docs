@@ -5,9 +5,11 @@ Code documentation for developers extending or integrating with Calcify.
 ## Namespaces
 
 ### Calcify
+
 Main application namespace containing windows and application logic.
 
 ### Calcify.Classes
+
 Utility classes for calculations, conversions, and system operations.
 
 ---
@@ -23,24 +25,29 @@ Mathematical operations and expression evaluation.
 #### Methods
 
 ##### Evaluate(string expression)
+
 Evaluates a mathematical expression and returns the result.
 
 **Signature:**
+
 ```csharp
 public static double Evaluate(string expression)
 ```
 
 **Parameters:**
+
 - `expression` (string): Mathematical expression to evaluate
 
 **Returns:** `double` - Calculated result
 
 **Throws:**
+
 - `FormatException` - Invalid expression format
 - `DivideByZeroException` - Division by zero
 - `OverflowException` - Result too large
 
 **Example:**
+
 ```csharp
 double result = Math.Evaluate("2 + 2");  // 4.0
 double complex = Math.Evaluate("sin(30) * 100");  // 50.0
@@ -49,14 +56,17 @@ double complex = Math.Evaluate("sin(30) * 100");  // 50.0
 ---
 
 ##### ConvertUnit(double value, string fromUnit, string toUnit)
+
 Converts a value from one unit to another.
 
 **Signature:**
+
 ```csharp
 public static double ConvertUnit(double value, string fromUnit, string toUnit)
 ```
 
 **Parameters:**
+
 - `value` (double): Value to convert
 - `fromUnit` (string): Source unit code (e.g., "km", "pounds")
 - `toUnit` (string): Target unit code (e.g., "miles", "kg")
@@ -64,9 +74,11 @@ public static double ConvertUnit(double value, string fromUnit, string toUnit)
 **Returns:** `double` - Converted value
 
 **Throws:**
+
 - `ArgumentException` - Unknown unit or incompatible units
 
 **Example:**
+
 ```csharp
 double miles = Math.ConvertUnit(10, "km", "miles");  // 6.21371
 double kg = Math.ConvertUnit(150, "pounds", "kg");  // 68.0389
@@ -75,22 +87,27 @@ double kg = Math.ConvertUnit(150, "pounds", "kg");  // 68.0389
 ---
 
 ##### Sqrt(double x)
+
 Calculates the square root.
 
 **Signature:**
+
 ```csharp
 public static double Sqrt(double x)
 ```
 
 **Parameters:**
+
 - `x` (double): Number to find square root of
 
 **Returns:** `double` - Square root of x
 
 **Throws:**
+
 - `ArgumentException` - If x is negative
 
 **Example:**
+
 ```csharp
 double result = Math.Sqrt(16);  // 4.0
 ```
@@ -98,19 +115,23 @@ double result = Math.Sqrt(16);  // 4.0
 ---
 
 ##### Sin(double angleDegrees)
+
 Calculates sine of an angle in degrees.
 
 **Signature:**
+
 ```csharp
 public static double Sin(double angleDegrees)
 ```
 
 **Parameters:**
+
 - `angleDegrees` (double): Angle in degrees
 
 **Returns:** `double` - Sine value
 
 **Example:**
+
 ```csharp
 double result = Math.Sin(30);  // 0.5
 double result2 = Math.Sin(90);  // 1.0
@@ -119,19 +140,23 @@ double result2 = Math.Sin(90);  // 1.0
 ---
 
 ##### Cos(double angleDegrees)
+
 Calculates cosine of an angle in degrees.
 
 **Signature:**
+
 ```csharp
 public static double Cos(double angleDegrees)
 ```
 
 **Parameters:**
+
 - `angleDegrees` (double): Angle in degrees
 
 **Returns:** `double` - Cosine value
 
 **Example:**
+
 ```csharp
 double result = Math.Cos(0);  // 1.0
 double result2 = Math.Cos(60);  // 0.5
@@ -140,23 +165,28 @@ double result2 = Math.Cos(60);  // 0.5
 ---
 
 ##### Log(double x, double base = 10)
+
 Calculates logarithm of x with specified base.
 
 **Signature:**
+
 ```csharp
 public static double Log(double x, double base = 10)
 ```
 
 **Parameters:**
+
 - `x` (double): Number to find logarithm of
 - `base` (double, optional): Logarithm base (default: 10)
 
 **Returns:** `double` - Logarithm value
 
 **Throws:**
+
 - `ArgumentException` - If x ≤ 0
 
 **Example:**
+
 ```csharp
 double result = Math.Log(100);  // 2.0 (log base 10)
 double result2 = Math.Log(8, 2);  // 3.0 (log base 2)
@@ -177,20 +207,24 @@ public RegistryWatcher(string keyPath, int pollInterval = 1000)
 ```
 
 **Parameters:**
+
 - `keyPath` (string): Registry key path to monitor
 - `pollInterval` (int, optional): Polling interval in milliseconds (default: 1000)
 
 #### Methods
 
 ##### Start()
+
 Starts monitoring the registry key.
 
 **Signature:**
+
 ```csharp
 public void Start()
 ```
 
 **Example:**
+
 ```csharp
 var watcher = new RegistryWatcher(@"HKEY_CLASSES_ROOT\.calc");
 watcher.Start();
@@ -199,9 +233,11 @@ watcher.Start();
 ---
 
 ##### Stop()
+
 Stops monitoring the registry key.
 
 **Signature:**
+
 ```csharp
 public void Stop()
 ```
@@ -211,14 +247,17 @@ public void Stop()
 #### Events
 
 ##### ValueChanged
+
 Fired when the monitored registry value changes.
 
 **Signature:**
+
 ```csharp
 public event EventHandler ValueChanged
 ```
 
 **Example:**
+
 ```csharp
 watcher.ValueChanged += (sender, e) => {
     Console.WriteLine("Registry value changed!");
@@ -236,19 +275,23 @@ Manages syntax highlighting definitions.
 #### Methods
 
 ##### LoadSyntax(string filePath)
+
 Loads syntax highlighting definition from file.
 
 **Signature:**
+
 ```csharp
 public static IHighlightingDefinition LoadSyntax(string filePath)
 ```
 
 **Parameters:**
+
 - `filePath` (string): Path to syntax definition file
 
 **Returns:** `IHighlightingDefinition` - Highlighting definition
 
 **Example:**
+
 ```csharp
 var syntax = SyntaxFile.LoadSyntax("calcify.xshd");
 textEditor.SyntaxHighlighting = syntax;
@@ -269,6 +312,7 @@ Main application window.
 #### Properties
 
 ##### TextEditor
+
 Gets the main text editor control.
 
 **Type:** `ICSharpCode.AvalonEdit.TextEditor`
@@ -276,6 +320,7 @@ Gets the main text editor control.
 **Access:** Read-only
 
 **Example:**
+
 ```csharp
 string text = MainWindow.TextEditor.Text;
 ```
@@ -283,6 +328,7 @@ string text = MainWindow.TextEditor.Text;
 ---
 
 ##### CurrentFile
+
 Gets or sets the currently open file path.
 
 **Type:** `string`
@@ -294,14 +340,17 @@ Gets or sets the currently open file path.
 #### Methods
 
 ##### NewFile()
+
 Creates a new blank file.
 
 **Signature:**
+
 ```csharp
 public void NewFile()
 ```
 
 **Example:**
+
 ```csharp
 mainWindow.NewFile();
 ```
@@ -309,17 +358,21 @@ mainWindow.NewFile();
 ---
 
 ##### OpenFile(string filePath)
+
 Opens a file for editing.
 
 **Signature:**
+
 ```csharp
 public void OpenFile(string filePath)
 ```
 
 **Parameters:**
+
 - `filePath` (string): Path to file to open
 
 **Example:**
+
 ```csharp
 mainWindow.OpenFile(@"C:\calculations\myfile.calc");
 ```
@@ -327,9 +380,11 @@ mainWindow.OpenFile(@"C:\calculations\myfile.calc");
 ---
 
 ##### SaveFile()
+
 Saves the current file.
 
 **Signature:**
+
 ```csharp
 public bool SaveFile()
 ```
@@ -339,14 +394,17 @@ public bool SaveFile()
 ---
 
 ##### SaveFileAs(string filePath)
+
 Saves the current file to a new location.
 
 **Signature:**
+
 ```csharp
 public bool SaveFileAs(string filePath)
 ```
 
 **Parameters:**
+
 - `filePath` (string): Path to save file to
 
 **Returns:** `bool` - True if saved successfully
@@ -385,14 +443,17 @@ int autoSaveInterval = Settings.Default.AutoSaveInterval;
 #### Methods
 
 ##### Save()
+
 Persists settings to disk.
 
 **Signature:**
+
 ```csharp
 public void Save()
 ```
 
 **Example:**
+
 ```csharp
 Settings.Default.Theme = "Dark";
 Settings.Default.Save();
@@ -401,9 +462,11 @@ Settings.Default.Save();
 ---
 
 ##### Reset()
+
 Resets all settings to defaults.
 
 **Signature:**
+
 ```csharp
 public void Reset()
 ```
@@ -417,14 +480,17 @@ public void Reset()
 Extension methods for string manipulation.
 
 #### ToDouble()
+
 Parses string to double with error handling.
 
 **Signature:**
+
 ```csharp
 public static double ToDouble(this string str)
 ```
 
 **Example:**
+
 ```csharp
 double value = "3.14".ToDouble();
 ```
@@ -467,9 +533,11 @@ public interface IUnitConverter
 ### Application Events
 
 #### ApplicationStartup
+
 Fired when application starts.
 
 **Signature:**
+
 ```csharp
 public event EventHandler ApplicationStartup
 ```
@@ -477,9 +545,11 @@ public event EventHandler ApplicationStartup
 ---
 
 #### ApplicationExit
+
 Fired before application exits.
 
 **Signature:**
+
 ```csharp
 public event EventHandler ApplicationExit
 ```
@@ -489,14 +559,17 @@ public event EventHandler ApplicationExit
 ### Document Events
 
 #### DocumentChanged
+
 Fired when document content changes.
 
 **Signature:**
+
 ```csharp
 public event EventHandler<DocumentChangedEventArgs> DocumentChanged
 ```
 
 **EventArgs:**
+
 ```csharp
 public class DocumentChangedEventArgs : EventArgs
 {
@@ -510,6 +583,7 @@ public class DocumentChangedEventArgs : EventArgs
 ## Enumerations
 
 ### Theme
+
 Available themes.
 
 ```csharp
@@ -524,6 +598,7 @@ public enum Theme
 ---
 
 ### AngleUnit
+
 Angle measurement units.
 
 ```csharp
@@ -538,6 +613,7 @@ public enum AngleUnit
 ---
 
 ### DecimalSeparator
+
 Decimal separator character.
 
 ```csharp
@@ -587,6 +663,7 @@ public static class UnitConstants
 ## Usage Examples
 
 ### Basic Calculation
+
 ```csharp
 using Calcify.Classes;
 
@@ -596,6 +673,7 @@ Console.WriteLine(result);  // 8.0
 ```
 
 ### Unit Conversion
+
 ```csharp
 using Calcify.Classes;
 
@@ -605,6 +683,7 @@ Console.WriteLine($"{km} km = {miles} miles");
 ```
 
 ### Opening a File Programmatically
+
 ```csharp
 var mainWindow = new MainWindow();
 mainWindow.OpenFile(@"C:\calculations\test.calc");
@@ -612,6 +691,7 @@ mainWindow.Show();
 ```
 
 ### Monitoring Settings Changes
+
 ```csharp
 Settings.Default.PropertyChanged += (sender, e) =>
 {
@@ -623,6 +703,7 @@ Settings.Default.PropertyChanged += (sender, e) =>
 ```
 
 ### Custom Syntax Highlighting
+
 ```csharp
 var syntax = SyntaxFile.LoadSyntax("custom.xshd");
 textEditor.SyntaxHighlighting = syntax;
@@ -632,14 +713,14 @@ textEditor.SyntaxHighlighting = syntax;
 
 ## Error Codes
 
-| Code | Name | Description |
-|------|------|-------------|
-| 1001 | InvalidExpression | Expression syntax error |
-| 1002 | DivisionByZero | Attempted division by zero |
-| 1003 | UndefinedVariable | Variable not defined |
-| 1004 | UnitConversionError | Invalid unit conversion |
-| 1005 | FileAccessError | Cannot access file |
-| 1006 | NetworkError | Network connection failed |
+| Code | Name                | Description                |
+| ---- | ------------------- | -------------------------- |
+| 1001 | InvalidExpression   | Expression syntax error    |
+| 1002 | DivisionByZero      | Attempted division by zero |
+| 1003 | UndefinedVariable   | Variable not defined       |
+| 1004 | UnitConversionError | Invalid unit conversion    |
+| 1005 | FileAccessError     | Cannot access file         |
+| 1006 | NetworkError        | Network connection failed  |
 
 ---
 
@@ -654,6 +735,7 @@ textEditor.SyntaxHighlighting = syntax;
 ---
 
 **See Also:**
+
 - [Architecture Overview](architecture.md)
 - [Building from Source](building.md)
 - [Contributing Guide](contributing.md)

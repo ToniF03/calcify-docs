@@ -7,10 +7,11 @@ Calcify supports a wide range of unit conversions for everyday calculations.
 The basic syntax for unit conversions is:
 
 ```
-[value] [source_unit] to [target_unit]
+[value] [source_unit] to/in/into/as [target_unit]
 ```
 
 **Examples:**
+
 ```
 10 km to miles
 100 pounds to kg
@@ -51,6 +52,7 @@ The basic syntax for unit conversions is:
 ### Supported Length Units
 
 **Metric:**
+
 - Kilometer (km)
 - Meter (m)
 - Decimeter (dm)
@@ -60,6 +62,7 @@ The basic syntax for unit conversions is:
 - Nanometer (nm)
 
 **Imperial:**
+
 - Mile (mi, mile, miles)
 - Yard (yd, yard, yards)
 - Foot (ft, foot, feet)
@@ -95,6 +98,7 @@ The basic syntax for unit conversions is:
 ### Supported Weight Units
 
 **Metric:**
+
 - Ton (t, ton, tons)
 - Kilogram (kg)
 - Gram (g)
@@ -102,6 +106,7 @@ The basic syntax for unit conversions is:
 - Microgram (μg, ug)
 
 **Imperial:**
+
 - Long Ton (lt)
 - Short Ton (tn)
 - Stone (st)
@@ -434,6 +439,7 @@ Most units have multiple aliases:
 ---
 
 **Next Steps:**
+
 - Try [Currency Conversion](currency-conversion.md) for real-time exchange rates
 - See [Complete Unit Reference](../reference/supported-units.md)
 - Learn about [Advanced Math](advanced-math.md)

@@ -12,10 +12,6 @@ Welcome to the Calcify documentation! This guide will help you get started and m
 
 ### Features
 
-
-
-READ NEXT HERE
-
 - [Basic Calculations](features/basic-calculations.md) - Arithmetic operations and expressions
 - [Unit Conversions](features/unit-conversions.md) - Convert between different units
 - [Currency Conversion](features/currency-conversion.md) - Real-time exchange rates

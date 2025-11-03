@@ -293,15 +293,9 @@ random() * 100          →  xx.xxx (between 0 and 100)
 ### Random Integer
 
 ```
-random(10)              →  x (integer 0-10)
-random(1, 100)          →  xx (integer 1-100)
-random(5, 15)           →  x (integer 5-15)
-```
-
-### Random from List
-
-```
-choice([1, 5, 10, 20])  →  random element
+randint(10)              →  x (integer 0-10)
+randint(1, 100)          →  xx (integer 1-100)
+randomint(5, 15)           →  x (integer 5-15)
 ```
 
 ## Constants
@@ -329,17 +323,17 @@ sqrt(2)                 →  1.414
 ### Degrees to Radians
 
 ```
-deg2rad(180)            →  3.14159 (pi)
-deg2rad(90)             →  1.5708
-deg2rad(360)            →  6.28319
+180 deg to rad            →  3.14159 (pi)
+90 deg to rad(90)         →  1.5708
+360 deg to rad            →  6.28319
 ```
 
 ### Radians to Degrees
 
 ```
-rad2deg(pi)             →  180
-rad2deg(pi/2)           →  90
-rad2deg(2*pi)           →  360
+pi rad to deg             →  180
+pi/2 rad to deg           →  90
+2*pi rad to deg           →  360
 ```
 
 ## Practical Examples
@@ -352,7 +346,7 @@ v0 = 20              // m/s
 angle = 45           // degrees
 
 // Convert to radians
-angle_rad = deg2rad(angle)
+angle_rad = angle deg to rad
 
 // Components
 vx = v0 * cos(angle_rad)    →  14.14 m/s
@@ -546,6 +540,7 @@ log(abs(-10))           →  1
 ---
 
 **Next Steps:**
+
 - Review [Mathematical Functions Reference](../reference/math-functions.md)
 - See [Keyboard Shortcuts](../reference/keyboard-shortcuts.md)
 - Explore [Settings Options](../reference/settings.md)

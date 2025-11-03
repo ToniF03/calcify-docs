@@ -7,15 +7,18 @@ Learn how to compile Calcify yourself from the source code.
 ### Required Software
 
 1. **Visual Studio 2019 or later**
+   
    - Download: [Visual Studio Community](https://visualstudio.microsoft.com/downloads/)
    - Free for individual developers
-   
+
 2. **Components to Install:**
+   
    - .NET desktop development workload
    - .NET Framework 4.5.2 SDK or higher
    - Windows SDK
 
 3. **Optional Tools:**
+   
    - Git (for cloning the repository)
    - WiX Toolset (for creating installer)
 
@@ -74,6 +77,7 @@ Calcify/
 3. Wait for packages to download
 
 **Required Packages:**
+
 - AvalonEdit 6.1.3.50
 - Newtonsoft.Json 13.0.1
 - Microsoft.UI.Xaml 2.7.0
@@ -81,38 +85,46 @@ Calcify/
 ### Step 3: Select Build Configuration
 
 **Debug Configuration:**
+
 - For development and testing
 - Includes debug symbols
 - No optimizations
 
 **Release Configuration:**
+
 - For production builds
 - Optimized code
 - Smaller file size
 
 **To Select:**
+
 1. Click dropdown at top (shows "Debug" or "Release")
 2. Select desired configuration
 
 ### Step 4: Build the Project
 
 **Method 1: Menu**
+
 - Click **Build** → **Build Solution** (`Ctrl + Shift + B`)
 
 **Method 2: Keyboard**
+
 - Press `F6` or `Ctrl + Shift + B`
 
 **Method 3: Right-click**
+
 - Right-click solution in Solution Explorer
 - Select **Build**
 
 ### Step 5: Run the Application
 
 **Debug Mode:**
+
 - Press `F5` to start with debugging
 - Or click **Debug** → **Start Debugging**
 
 **Release Mode:**
+
 - Press `Ctrl + F5` to start without debugging
 - Or click **Debug** → **Start Without Debugging**
 
@@ -121,11 +133,13 @@ Calcify/
 After successful build, the executable is located at:
 
 **Debug:**
+
 ```
 Calcify\bin\Debug\Calcify.exe
 ```
 
 **Release:**
+
 ```
 Calcify\bin\Release\Calcify.exe
 ```
@@ -135,6 +149,7 @@ Calcify\bin\Release\Calcify.exe
 ### Using MSBuild
 
 **Prerequisites:**
+
 - Visual Studio Developer Command Prompt
 - Or MSBuild in PATH
 
@@ -180,6 +195,7 @@ if ($LASTEXITCODE -eq 0) {
 ```
 
 Run with:
+
 ```powershell
 .\build.ps1
 ```
@@ -189,6 +205,7 @@ Run with:
 ### Prerequisites
 
 Install **WiX Toolset:**
+
 1. Download from [WiX Toolset website](https://wixtoolset.org/)
 2. Install WiX v3.11 or later
 3. Restart Visual Studio
@@ -201,6 +218,7 @@ Install **WiX Toolset:**
 4. Select **Build**
 
 **Output:**
+
 ```
 setup\bin\Debug\Calcify-Setup.msi
 ```
@@ -208,6 +226,7 @@ setup\bin\Debug\Calcify-Setup.msi
 ### Installer Customization
 
 Edit `setup\Product.wxs` to customize:
+
 - Installation directory
 - Start menu shortcuts
 - File associations
@@ -220,6 +239,7 @@ Edit `setup\Product.wxs` to customize:
 **Problem:** Build fails with "package not found" errors
 
 **Solution:**
+
 ```powershell
 # Clear NuGet cache
 nuget locals all -clear
@@ -235,6 +255,7 @@ nuget restore Calcify.sln
 **Problem:** `Could not load file or assembly 'AvalonEdit'`
 
 **Solution:**
+
 1. Right-click solution → **Manage NuGet Packages**
 2. Reinstall AvalonEdit package
 3. Rebuild solution
@@ -246,6 +267,7 @@ nuget restore Calcify.sln
 **Problem:** Errors in `.xaml` files
 
 **Solution:**
+
 1. Clean solution: **Build** → **Clean Solution**
 2. Close Visual Studio
 3. Delete `bin` and `obj` folders
@@ -258,6 +280,7 @@ nuget restore Calcify.sln
 **Problem:** `The reference assemblies for framework ".NETFramework,Version=v4.5.2" were not found`
 
 **Solution:**
+
 1. Install .NET Framework 4.5.2 Developer Pack
 2. Or change target framework in project properties
 
@@ -268,8 +291,11 @@ nuget restore Calcify.sln
 **Problem:** `'msbuild' is not recognized`
 
 **Solution:**
+
 - Use Visual Studio Developer Command Prompt
+
 - Or add MSBuild to PATH:
+  
   ```
   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin
   ```
@@ -287,12 +313,14 @@ nuget restore Calcify.sln
 ### Debug Symbols
 
 Include `.pdb` files for stack traces:
+
 - Automatically generated in Debug mode
 - Enable in Release: Project Properties → Build → Advanced → Debug Info
 
 ### Code Analysis
 
 Enable static analysis:
+
 1. Project Properties → Code Analysis
 2. Select ruleset
 3. Build to see warnings
@@ -319,22 +347,22 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: windows-latest
-    
+
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
-    
+
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1
-    
+
     - name: Restore packages
       run: nuget restore Calcify.sln
-    
+
     - name: Build solution
       run: msbuild Calcify.sln /p:Configuration=Release
-    
+
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
@@ -358,6 +386,7 @@ See [Contributing Guide](contributing.md) for details.
 ### Custom Build Configuration
 
 Create new configuration:
+
 1. **Build** → **Configuration Manager**
 2. Click **Active solution configuration** → **New**
 3. Name it (e.g., "Debug-x64")
@@ -378,10 +407,12 @@ Use preprocessor directives:
 ### Post-Build Events
 
 Automate tasks after build:
+
 1. Project Properties → Build Events
 2. Add commands to **Post-build event**
 
 Example:
+
 ```batch
 xcopy "$(TargetDir)*.*" "C:\Deploy\" /Y
 ```
@@ -389,6 +420,7 @@ xcopy "$(TargetDir)*.*" "C:\Deploy\" /Y
 ---
 
 **See Also:**
+
 - [Contributing Guide](contributing.md)
 - [Architecture Overview](architecture.md)
 - [API Reference](api-reference.md)

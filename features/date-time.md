@@ -480,6 +480,7 @@ days_left = renewal - today
 ---
 
 **Next Steps:**
+
 - Explore [Advanced Math Functions](advanced-math.md)
 - Check [Keyboard Shortcuts](../reference/keyboard-shortcuts.md)
 - Review [Settings Options](../reference/settings.md)

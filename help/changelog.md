@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Planned Features
+
 - Hexadecimal and binary number conversion
 - Custom function definitions
 - Plotting and graphing capabilities
@@ -24,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.0] - 2024-12-15
 
 ### Added
+
 - Currency conversion with real-time exchange rates
 - Support for 30+ international currencies
 - Frankfurter API integration for exchange rates
@@ -39,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Command palette (`Ctrl + Shift + P`)
 
 ### Changed
+
 - Improved calculation engine performance (30% faster)
 - Updated AvalonEdit to version 6.1.3.50
 - Refined dark theme colors for better contrast
@@ -47,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Better error messages for invalid expressions
 
 ### Fixed
+
 - Fixed division by zero crash
 - Corrected temperature conversion formulas
 - Fixed auto-save not working for untitled files
@@ -60,6 +64,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.5] - 2024-09-20
 
 ### Added
+
 - Angle unit selection (degrees/radians/gradians)
 - Hyperbolic trigonometric functions (sinh, cosh, tanh)
 - Statistical functions (median, mode, variance)
@@ -69,12 +74,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Copy result shortcut (`Ctrl + Shift + C`)
 
 ### Changed
+
 - Improved syntax highlighting performance
 - Updated UI icons to modern style
 - Enhanced autocomplete speed
 - Better keyboard shortcut organization
 
 ### Fixed
+
 - Fixed logarithm domain errors
 - Corrected square root of negative numbers error
 - Fixed autocomplete not showing for some functions
@@ -86,6 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2024-06-10
 
 ### Added
+
 - Unit conversion system
 - Support for length, weight, temperature conversions
 - Data size conversions (KB, MB, GB, TB)
@@ -101,12 +109,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Word wrap toggle
 
 ### Changed
+
 - Improved parser for better expression handling
 - Enhanced error reporting with line numbers
 - Refined UI layout and spacing
 - Updated About dialog with license info
 
 ### Fixed
+
 - Fixed crash on very long expressions
 - Corrected operator precedence issues
 - Fixed parentheses matching errors
@@ -118,6 +128,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.5] - 2024-03-15
 
 ### Added
+
 - Keyboard shortcuts reference (`Ctrl + K Ctrl + S`)
 - Find and replace functionality
 - Go to line feature (`Ctrl + G`)
@@ -126,12 +137,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Block comment toggle
 
 ### Changed
+
 - Improved responsiveness on slower computers
 - Faster file loading for large documents
 - Better memory management
 - Updated .NET Framework to 4.8
 
 ### Fixed
+
 - Fixed find next/previous bugs
 - Corrected undo/redo stack issues
 - Fixed cursor position after find/replace
@@ -144,6 +157,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Initial Release
 
 #### Features
+
 - Basic arithmetic operations (+, -, *, /, ^, %)
 - Mathematical functions (sin, cos, tan, sqrt, log, etc.)
 - Variable support
@@ -156,10 +170,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Portable version available
 
 #### Supported Platforms
+
 - Windows 7 SP1 and later
 - .NET Framework 4.5.2 or higher
 
 #### Functions
+
 - Trigonometry: sin, cos, tan, asin, acos, atan
 - Logarithms: log, ln, log10
 - Powers and roots: sqrt, cbrt, pow
@@ -171,13 +187,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
-| Version | Release Date | Major Features |
-|---------|--------------|----------------|
-| 1.2.0 | 2024-12-15 | Currency conversion, date/time calculations |
-| 1.1.5 | 2024-09-20 | Advanced trig functions, statistics |
-| 1.1.0 | 2024-06-10 | Unit conversions, dark theme |
-| 1.0.5 | 2024-03-15 | Find/replace, keyboard shortcuts |
-| 1.0.0 | 2024-01-01 | Initial release |
+| Version | Release Date | Major Features                              |
+| ------- | ------------ | ------------------------------------------- |
+| 1.2.0   | 2024-12-15   | Currency conversion, date/time calculations |
+| 1.1.5   | 2024-09-20   | Advanced trig functions, statistics         |
+| 1.1.0   | 2024-06-10   | Unit conversions, dark theme                |
+| 1.0.5   | 2024-03-15   | Find/replace, keyboard shortcuts            |
+| 1.0.0   | 2024-01-01   | Initial release                             |
 
 ---
 
@@ -195,12 +211,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Upgrading
 
 ### From 1.1.x to 1.2.0
+
 - All settings are preserved
 - Currency conversion requires internet connection
 - New date/time features available immediately
 - Performance mode improves speed on older systems
 
 ### From 1.0.x to 1.1.0
+
 - Settings are migrated automatically
 - Theme preference is preserved
 - Unit conversion syntax: `value unit to unit`
@@ -217,11 +235,13 @@ None currently. All features are actively supported.
 ## Known Issues
 
 ### Version 1.2.0
+
 - Currency conversion may be slow on first run (fetching rates)
 - Very large date ranges (>1000 years) may have precision issues
 - Performance mode disables some visual effects
 
 ### Version 1.1.5
+
 - Hyperbolic functions use radians regardless of angle setting
 - Print preview may be slow for documents >100 pages
 
@@ -230,19 +250,16 @@ None currently. All features are actively supported.
 ## Future Plans
 
 ### Version 1.3.0 (Planned Q2 2025)
+
 - Hex/binary number support
 - Bitwise operations
 - Custom function definitions
 - Multi-cursor editing
 - Code folding
 - Mini-map view
-
-### Version 2.0.0 (Planned Q4 2025)
 - Complete UI redesign
 - Plugin system
-- Cloud sync
-- Mobile companion app
-- Graphing capabilities
+- Mobile companion app (?)
 - Matrix operations
 - Complex number support
 

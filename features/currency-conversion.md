@@ -9,6 +9,7 @@ Calcify provides real-time currency conversion using live exchange rates from th
 ```
 
 **Examples:**
+
 ```
 100 USD to EUR
 50 GBP to USD
@@ -21,18 +22,18 @@ Calcify supports all major world currencies including:
 
 ### Major Currencies
 
-| Code | Currency |
-|------|----------|
-| USD | US Dollar |
-| EUR | Euro |
-| GBP | British Pound |
-| JPY | Japanese Yen |
-| CHF | Swiss Franc |
-| CAD | Canadian Dollar |
-| AUD | Australian Dollar |
-| NZD | New Zealand Dollar |
-| CNY | Chinese Yuan |
-| INR | Indian Rupee |
+| Code | Currency           |
+| ---- | ------------------ |
+| USD  | US Dollar          |
+| EUR  | Euro               |
+| GBP  | British Pound      |
+| JPY  | Japanese Yen       |
+| CHF  | Swiss Franc        |
+| CAD  | Canadian Dollar    |
+| AUD  | Australian Dollar  |
+| NZD  | New Zealand Dollar |
+| CNY  | Chinese Yuan       |
+| INR  | Indian Rupee       |
 
 ### Other Currencies
 
@@ -92,6 +93,7 @@ Calcify supports all major world currencies including:
 ### Automatic Updates
 
 Calcify automatically fetches the latest exchange rates:
+
 - **On Startup** - Rates update when you launch Calcify
 - **Periodic Updates** - Every 1-6 hours (configurable)
 - **Manual Refresh** - Force update in Settings
@@ -99,6 +101,7 @@ Calcify automatically fetches the latest exchange rates:
 ### Update Interval
 
 Configure in **Settings** → **Calculations**:
+
 - 1 hour (most current, requires internet)
 - 3 hours (balanced, default)
 - 6 hours (less frequent)
@@ -108,6 +111,7 @@ Configure in **Settings** → **Calculations**:
 ### Offline Mode
 
 When internet is unavailable:
+
 - Calcify uses the last fetched rates
 - A warning indicates the data age
 - Conversions still work with cached rates
@@ -242,6 +246,7 @@ Enable in **Settings**:
 ### Rate Source
 
 Calcify uses the **Frankfurter API** for exchange rates:
+
 - Free and open-source
 - Updated daily from European Central Bank
 - Reliable and accurate
@@ -250,6 +255,7 @@ Calcify uses the **Frankfurter API** for exchange rates:
 ### Base Currency
 
 Rates are based on EUR (Euro) from the ECB:
+
 - All conversions go through EUR
 - Updated daily at ~16:00 CET
 - Historical accuracy
@@ -289,6 +295,7 @@ Rates are based on EUR (Euro) from the ECB:
 **Problem:** Cannot fetch exchange rates
 
 **Solution:**
+
 - Connect to internet
 - Rates from last update will be used
 - Check age indicator in Settings
@@ -298,6 +305,7 @@ Rates are based on EUR (Euro) from the ECB:
 **Problem:** Rates seem old
 
 **Solution:**
+
 - Go to Settings → Calculations
 - Click "Update Exchange Rates Now"
 - Check your internet connection
@@ -307,6 +315,7 @@ Rates are based on EUR (Euro) from the ECB:
 **Problem:** Currency code not recognized
 
 **Solution:**
+
 - Verify the 3-letter ISO code (USD, EUR, etc.)
 - Check spelling
 - See supported currencies list above
@@ -362,6 +371,7 @@ change_percent = (change / yesterday) * 100
 For developers interested in the exchange rate source:
 
 **Frankfurter API**
+
 - Endpoint: `https://api.frankfurter.app`
 - Data: European Central Bank (ECB)
 - Update: Daily at ~16:00 CET
@@ -371,6 +381,7 @@ For developers interested in the exchange rate source:
 ---
 
 **Next Steps:**
+
 - Learn about [Date and Time Calculations](date-time.md)
 - Explore [Advanced Math Functions](advanced-math.md)
 - Check [Settings Reference](../reference/settings.md)

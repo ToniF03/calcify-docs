@@ -10,26 +10,12 @@ Complete guide to all settings and configuration options in Calcify.
 
 ## General Settings
 
-### Language
-
-**Description:** Interface language selection
-
-**Options:**
-- English (default)
-- German
-- French
-- Spanish
-- (More languages may be available)
-
-**Default:** English
-
----
-
 ### Auto-Save
 
 **Description:** Automatically save files at regular intervals
 
 **Options:**
+
 - Enabled / Disabled
 
 **Default:** Enabled
@@ -43,6 +29,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** How often to auto-save (when enabled)
 
 **Options:**
+
 - 1 minute
 - 2 minutes
 - 5 minutes (default)
@@ -58,6 +45,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Automatically check for new versions
 
 **Options:**
+
 - On Startup (default)
 - Daily
 - Weekly
@@ -84,6 +72,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Color scheme for the interface
 
 **Options:**
+
 - Light - White background, dark text
 - Dark - Dark background, light text
 - System - Follow Windows theme
@@ -91,24 +80,6 @@ Complete guide to all settings and configuration options in Calcify.
 **Default:** System
 
 **Shortcut:** `Ctrl + T` to toggle
-
----
-
-### Font Family
-
-**Description:** Font used in the editor
-
-**Options:**
-- Consolas (default)
-- Courier New
-- Lucida Console
-- Cascadia Code
-- Fira Code
-- (Any monospace font installed)
-
-**Default:** Consolas
-
-**Note:** Monospace fonts recommended for alignment
 
 ---
 
@@ -121,6 +92,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Default:** 12 pt
 
 **Shortcuts:**
+
 - `Ctrl + +` to increase
 - `Ctrl + -` to decrease
 - `Ctrl + 0` to reset
@@ -132,6 +104,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Spacing between lines
 
 **Options:**
+
 - Compact (1.0)
 - Normal (1.2) - default
 - Comfortable (1.5)
@@ -158,19 +131,6 @@ Complete guide to all settings and configuration options in Calcify.
 **Options:** Enabled / Disabled
 
 **Default:** Enabled
-
----
-
-### Word Wrap
-
-**Description:** Wrap long lines instead of horizontal scrolling
-
-**Options:**
-- No Wrap
-- Word Wrap (default)
-- Character Wrap
-
-**Default:** Word Wrap
 
 ---
 
@@ -203,6 +163,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Number of spaces per tab character
 
 **Options:**
+
 - 2 spaces
 - 4 spaces (default)
 - 8 spaces
@@ -223,16 +184,6 @@ Complete guide to all settings and configuration options in Calcify.
 
 ---
 
-### Auto-Indent
-
-**Description:** Automatically indent new lines
-
-**Options:** Enabled / Disabled
-
-**Default:** Enabled
-
----
-
 ### Auto-Close Brackets
 
 **Description:** Automatically insert closing bracket/parenthesis
@@ -250,6 +201,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Show suggestions while typing
 
 **Options:**
+
 - Enabled (default)
 - Disabled
 
@@ -292,6 +244,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Default:** 2
 
 **Examples:**
+
 - 0 decimal places: `3`
 - 2 decimal places: `3.14`
 - 5 decimal places: `3.14159`
@@ -307,6 +260,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Default:** Enabled
 
 **Examples:**
+
 - Enabled: `1,000,000`
 - Disabled: `1000000`
 
@@ -317,6 +271,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Character used as thousands separator
 
 **Options:**
+
 - Comma (,) - default for US/UK
 - Period (.) - default for Europe
 - Space ( ) - international standard
@@ -330,6 +285,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Character used as decimal point
 
 **Options:**
+
 - Period (.) - default for US/UK
 - Comma (,) - default for Europe
 
@@ -342,6 +298,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** Default unit for trigonometric functions
 
 **Options:**
+
 - Degrees (default)
 - Radians
 - Gradians
@@ -365,6 +322,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** How often to fetch exchange rates
 
 **Options:**
+
 - 1 hour
 - 3 hours (default)
 - 6 hours
@@ -398,30 +356,6 @@ Complete guide to all settings and configuration options in Calcify.
 
 ## Advanced Settings
 
-### Debug Mode
-
-**Description:** Show additional diagnostic information
-
-**Options:** Enabled / Disabled
-
-**Default:** Disabled
-
-**Note:** For troubleshooting and development
-
----
-
-### Calculation Timeout
-
-**Description:** Maximum time for a single calculation
-
-**Options:** 1-30 seconds
-
-**Default:** 5 seconds
-
-**Note:** Prevents infinite loops
-
----
-
 ### Maximum History
 
 **Description:** Number of undo/redo operations to remember
@@ -429,18 +363,6 @@ Complete guide to all settings and configuration options in Calcify.
 **Options:** 10-1000
 
 **Default:** 100
-
----
-
-### Performance Mode
-
-**Description:** Optimize for speed over features
-
-**Options:** Enabled / Disabled
-
-**Default:** Disabled
-
-**Note:** Disable animations and effects for slower systems
 
 ---
 
@@ -474,18 +396,6 @@ Complete guide to all settings and configuration options in Calcify.
 
 ---
 
-### Associate .txt Files
-
-**Description:** Open .txt files with Calcify
-
-**Options:** Enabled / Disabled
-
-**Default:** Disabled
-
-**Note:** May conflict with other text editors
-
----
-
 ## Backup and Restore
 
 ### Auto-Backup Location
@@ -503,6 +413,7 @@ Complete guide to all settings and configuration options in Calcify.
 **Description:** How often to create backups
 
 **Options:**
+
 - Every save
 - Hourly
 - Daily (default)
@@ -513,37 +424,7 @@ Complete guide to all settings and configuration options in Calcify.
 
 ---
 
-### Keep Backups
-
-**Description:** Number of backup files to retain
-
-**Options:** 1-100
-
-**Default:** 10
-
----
-
-### Restore from Backup
-
-**Description:** Recover a previous version
-
-**Action:** Button to browse backups
-
----
-
 ## Privacy Settings
-
-### Send Anonymous Usage Data
-
-**Description:** Help improve Calcify by sending usage statistics
-
-**Options:** Enabled / Disabled
-
-**Default:** Enabled
-
-**Note:** No personal data is collected
-
----
 
 ### Check for Updates Automatically
 
@@ -560,16 +441,6 @@ Complete guide to all settings and configuration options in Calcify.
 ### View All Shortcuts
 
 **Action:** Opens keyboard shortcuts reference
-
----
-
-### Customize Shortcuts
-
-**Description:** Change keyboard shortcuts
-
-**Action:** Opens shortcut editor
-
-**Note:** See [Keyboard Shortcuts](keyboard-shortcuts.md) for defaults
 
 ---
 
@@ -606,6 +477,7 @@ Settings are stored in:
 **Format:** JSON
 
 **Example:**
+
 ```json
 {
   "theme": "dark",
@@ -639,6 +511,7 @@ Settings are stored in:
 **Problem:** Changes don't persist
 
 **Solutions:**
+
 1. Check file permissions on `%APPDATA%\Calcify`
 2. Run as Administrator
 3. Delete `settings.json` and restart (resets to defaults)
@@ -650,6 +523,7 @@ Settings are stored in:
 **Problem:** Error loading settings
 
 **Solutions:**
+
 1. Reset to defaults via Settings
 2. Delete `settings.json` file
 3. Restore from backup
@@ -661,6 +535,7 @@ Settings are stored in:
 **Problem:** Some settings not visible
 
 **Solutions:**
+
 1. Update to latest version
 2. Check if running in compatibility mode
 3. Ensure not in limited user account
@@ -668,6 +543,7 @@ Settings are stored in:
 ---
 
 **See Also:**
+
 - [Keyboard Shortcuts](keyboard-shortcuts.md)
 - [User Interface Guide](../user-interface.md)
 - [Troubleshooting](../help/troubleshooting.md)
