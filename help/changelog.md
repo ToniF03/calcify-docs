@@ -22,54 +22,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.1] - 2023-01-18
+## [[1.0.2]](https://github.com/ToniF03/Calcify/releases/tag/v1.2.0) - TBA
 
 ### Added
 
-- Currency conversion with real-time exchange rates
-- Support for 30+ international currencies
-- Frankfurter API integration for exchange rates
-- Auto-update exchange rates (configurable interval)
-- Manual rate refresh option in settings
-- Date and time calculations
-- `today`, `now` keywords for current date/time
-- Date arithmetic (add/subtract days, months, years)
-- Date difference calculations
-- Performance mode for slower systems
-- Backup and restore settings feature
-- Export/import calculations to JSON
-- Command palette (`Ctrl + Shift + P`)
+- added a toggle button to switch the color scheme between light and dark theme
 
 ### Changed
 
-- Improved calculation engine performance (30% faster)
-- Updated AvalonEdit to version 6.1.3.50
-- Refined dark theme colors for better contrast
-- Optimized memory usage for large files
-- Enhanced auto-complete suggestions
-- Better error messages for invalid expressions
+- optimized data value conversion factors
+
+---
+
+## [[1.0.1]](https://github.com/ToniF03/Calcify/releases/tag/v1.0.1) - 2023-01-18
+
+### Changed
+
+- changed the license to MIT License to fit more to our purpose
 
 ### Fixed
 
-- Fixed division by zero crash
-- Corrected temperature conversion formulas
-- Fixed auto-save not working for untitled files
-- Resolved memory leak in syntax highlighter
-- Fixed theme not applying on startup
-- Corrected time zone handling in date calculations
-- Fixed crash when opening corrupted files
+- fixed a critical bug, that caused Calcify to crash when ending a task with a plus
+- fixed a bug where the result was not shown when the task began with a geometric calculation and ended with an arithmetic one 
 
 ---
 
 ## Version History Summary
 
-| Version | Release Date | Major Features                              |
-| ------- | ------------ | ------------------------------------------- |
-| 1.2.0   | 2024-12-15   | Currency conversion, date/time calculations |
-| 1.1.5   | 2024-09-20   | Advanced trig functions, statistics         |
-| 1.1.0   | 2024-06-10   | Unit conversions, dark theme                |
-| 1.0.5   | 2024-03-15   | Find/replace, keyboard shortcuts            |
-| 1.0.0   | 2024-01-01   | Initial release                             |
+| Version | Release Date | Major Features             |
+| ------- | ------------ | -------------------------- |
+| 1.0.1   | 2023-01-18   | license change, bug fixing |
+| 1.0.0   | 2023-01-18   | Initial release            |
 
 ---
 
@@ -102,8 +85,6 @@ None currently. All features are actively supported.
 ---
 
 ## Known Issues
-
-
 
 ---
 
