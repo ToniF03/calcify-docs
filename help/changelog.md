@@ -81,8 +81,6 @@ None currently. All features are actively supported.
 
 ## Future Plans
 
-# 
-
 - Hex/binary number support
 - Bitwise operations
 - Custom function definitions
