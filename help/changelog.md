@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - added a toggle button to switch the color scheme between light and dark theme
+- added the `last` keyword as an addition to the `ans` and `prev` keywords
 
 ### Changed
 
@@ -44,6 +45,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - fixed a critical bug, that caused Calcify to crash when ending a task with a plus
 - fixed a bug where the result was not shown when the task began with a geometric calculation and ended with an arithmetic one 
+
+### Added
+
+- added the option to show the date as well, when printing `now` or `time`
 
 ---
 
