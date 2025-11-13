@@ -52,15 +52,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Version History Summary
-
-| Version | Release Date | Major Features             |
-| ------- | ------------ | -------------------------- |
-| 1.0.1   | 2023-01-18   | license change, bug fixing |
-| 1.0.0   | 2023-01-18   | Initial release            |
-
----
-
 ## Legend
 
 - **Added** - New features
@@ -94,8 +85,6 @@ None currently. All features are actively supported.
 ---
 
 ## Future Plans
-
-# 
 
 - Hex/binary number support
 - Bitwise operations
