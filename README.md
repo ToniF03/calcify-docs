@@ -41,7 +41,7 @@ Welcome to the Calcify documentation! This guide will help you get started and m
 ## 🚀 Quick Links
 
 - [GitHub Repository](https://github.com/ToniF03/Calcify)
-- [Homepage](https://tonif03.github.io/prod/calcify)
+- [Homepage](https://tonif03.github.io/projects/calcify)
 - [Report a Bug](https://github.com/ToniF03/Calcify/issues)
 
 ## 💡 Need Help?
