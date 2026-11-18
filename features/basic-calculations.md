@@ -70,19 +70,19 @@ Calcify follows the standard mathematical order of operations (PEMDAS/BODMAS):
 ### Examples
 
 ```
-// Multiplication before addition
+# Multiplication before addition
 5 + 3 * 2               →  11    (not 16)
 
-// Parentheses override default order
+# Parentheses override default order
 (5 + 3) * 2             →  16
 
-// Exponents before multiplication
+# Exponents before multiplication
 2 ^ 3 * 4               →  32    (not 4096)
 
-// Division and multiplication, left to right
+# Division and multiplication, left to right
 10 / 2 * 3              →  15
 
-// Complex expression
+# Complex expression
 (10 + 5) * 3 - 8 / 2    →  41
 ```
 
@@ -91,16 +91,16 @@ Calcify follows the standard mathematical order of operations (PEMDAS/BODMAS):
 Parentheses help clarify expressions and override order of operations:
 
 ```
-// Without parentheses
+# Without parentheses
 10 + 5 * 2              →  20
 
-// With parentheses
+# With parentheses
 (10 + 5) * 2            →  30
 
-// Nested parentheses
+# Nested parentheses
 ((10 + 5) * 2) - 3      →  27
 
-// Multiple groups
+# Multiple groups
 (5 + 3) * (10 - 2)      →  64
 ```
 
@@ -130,13 +130,13 @@ Calcify handles decimal numbers with precision:
 Control decimal places in Settings:
 
 ```
-// 2 decimal places (default)
-10 / 3                  →  3.33
+# 4 decimal places (default)
+10 / 3                  →  3.3333
 
-// 5 decimal places
+# 5 decimal places
 10 / 3                  →  3.33333
 
-// No decimal places
+# No decimal places
 10 / 3                  →  3
 ```
 
@@ -145,9 +145,9 @@ Control decimal places in Settings:
 Calcify can handle very large numbers:
 
 ```
-1000000 * 1000000       →  1000000000000
-2 ^ 20                  →  1048576
-999999999 + 1           →  1000000000
+1000000 * 1000000       →  1,000,000,000,000
+2 ^ 20                  →  1,048,576
+999999999 + 1           →  1,000,000,000
 ```
 
 ### Scientific Notation
@@ -177,21 +177,18 @@ Enable in Settings for easier reading:
 Calculate percentages easily:
 
 ```
-// Find percentage of a number
+# Find percentage of a number
 10% of 100              →  10
 25% of 200              →  50
 15% of 80               →  12
 
-// Add percentage
+# Add percentage
 100 + 10%               →  110
 50 + 25%                →  62.5
 
-// Subtract percentage
+# Subtract percentage
 100 - 10%               →  90
 200 - 25%               →  150
-
-// Percentage increase/decrease
-(150 - 100) / 100 * 100 →  50%
 ```
 
 ## Constants
@@ -202,6 +199,10 @@ Use built-in mathematical constants:
 pi                      →  3.14159265359
 e                       →  2.71828182846
 phi                     →  1.61803398875 (golden ratio)
+tau                     →  6.283
+c                       →  299,792,458
+R                       →  8.314
+Na                      →  602,214,076,000,000,000,000,000
 ```
 
 ### Using Constants
@@ -250,11 +251,11 @@ b * c                   →  150
 Add notes to your calculations:
 
 ```
-// This is a comment
+# This is a comment
 10 + 5                  →  15
 
-/* Multi-line
-   comment */
+#* Multi-line
+   comment *#
 20 * 3                  →  60
 ```
 
@@ -344,7 +345,7 @@ Calculate factorials:
 ```
 fact(5)                 →  120
 fact(0)                 →  1
-fact(10)                →  3628800
+fact(10)                →  3,628,800
 ```
 
 ## Random Numbers
@@ -352,9 +353,9 @@ fact(10)                →  3628800
 Generate random numbers:
 
 ```
-random()                →  0.xxx (between 0 and 1)
-random(10)              →  x (integer between 0 and 10)
-random(5, 10)           →  x (integer between 5 and 10)
+rand()                  →  0.xxx (between 0 and 1)
+rand(10)                →  x (integer between 0 and 10)
+rand(5, 10)             →  x (integer between 5 and 10)
 ```
 
 ## Practical Examples
@@ -367,7 +368,7 @@ tip_percent = 15
 tip = bill * tip_percent / 100
 total = bill + tip
 
-// Result: tip = 7.5, total = 57.5
+# Result: tip = 7.5, total = 57.5
 ```
 
 ### Area of Circle
@@ -376,7 +377,7 @@ total = bill + tip
 radius = 5
 area = pi * radius ^ 2
 
-// Result: area = 78.54
+# Result: area = 78.54
 ```
 
 ### Compound Interest
@@ -387,17 +388,15 @@ rate = 5
 years = 10
 amount = principal * (1 + rate/100) ^ years
 
-// Result: amount = 1628.89
+# Result: amount = 1628.89
 ```
 
 ### Average
 
 ```
-values = [10, 20, 30, 40, 50]
-sum = 10 + 20 + 30 + 40 + 50
-average = sum / 5
+avg(10, 20, 30, 40, 50)
 
-// Result: average = 30
+# Result: 30
 ```
 
 ## Tips
@@ -437,6 +436,7 @@ average = sum / 5
 ---
 
 **Next Steps:**
+
 - Learn about [Unit Conversions](unit-conversions.md)
 - Explore [Advanced Math Functions](advanced-math.md)
 - See [Mathematical Functions Reference](../reference/math-functions.md)

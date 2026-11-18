@@ -198,22 +198,6 @@ atan(1.732)             →  60
 
 ---
 
-### atan2(y, x)
-
-Arc tangent of y/x, returns angle in degrees, using signs to determine quadrant.
-
-**Syntax:** `atan2(y, x)`
-
-**Examples:**
-
-```
-atan2(1, 1)             →  45
-atan2(1, -1)            →  135
-atan2(-1, -1)           →  -135
-```
-
----
-
 ### sinh(x)
 
 Hyperbolic sine of x.
@@ -315,36 +299,18 @@ ln(10)                  →  2.303
 
 ---
 
-### log2(x)
+### log(x, y)
 
-Logarithm base 2.
+Logarithm base y.
 
-**Syntax:** `log2(number)`
+**Syntax:** `log(number, base)`
 **Domain:** x > 0
 
 **Examples:**
 
 ```
-log2(2)                 →  1
-log2(8)                 →  3
-log2(1024)              →  10
-```
-
----
-
-### log10(x)
-
-Logarithm base 10 (same as log(x)).
-
-**Syntax:** `log10(number)`
-**Domain:** x > 0
-
-**Examples:**
-
-```
-log10(10)               →  1
-log10(100)              →  2
-log10(1000)             →  3
+log(10, 5)               →  1.4
+log(10, 3)               →  2.1
 ```
 
 ---
@@ -418,17 +384,15 @@ root(100, 2)            →  10 (square root)
 
 ## Rounding
 
-### round(x) or round(x, decimals)
+### round(x, decimals)
 
-Rounds to nearest integer or specified decimal places.
+Rounds to specified decimal places.
 
-**Syntax:** `round(number)` or `round(number, decimals)`
+**Syntax:** `ound(number, decimals)`
 
 **Examples:**
 
 ```
-round(3.4)              →  3
-round(3.5)              →  4
 round(3.14159, 2)       →  3.14
 round(123.456, 1)       →  123.5
 ```
@@ -511,7 +475,6 @@ Average (arithmetic mean) of arguments.
 ```
 avg(1, 2, 3, 4, 5)      →  3
 mean(10, 20, 30)        →  20
-avg(5, 10, 15)          →  10
 ```
 
 ---
@@ -629,65 +592,17 @@ comb(52, 5)             →  2598960
 
 ---
 
-### gcd(x, y)
-
-Greatest common divisor of x and y.
-
-**Syntax:** `gcd(number1, number2)`
-
-**Examples:**
-
-```
-gcd(12, 18)             →  6
-gcd(100, 50)            →  50
-gcd(17, 19)             →  1
-```
-
----
-
-### lcm(x, y)
-
-Least common multiple of x and y.
-
-**Syntax:** `lcm(number1, number2)`
-
-**Examples:**
-
-```
-lcm(12, 18)             →  36
-lcm(4, 6)               →  12
-lcm(7, 5)               →  35
-```
-
----
-
 ## Random
 
-### random()
-
-Random number between 0 and 1.
-
-**Syntax:** `random()`
-
-**Examples:**
-
-```
-random()                →  0.742 (example)
-random() * 100          →  74.2
-```
-
----
-
-### random(max) or random(min, max)
+### random(min, max)
 
 Random integer in specified range.
 
-**Syntax:** `random(max)` or `random(min, max)`
+**Syntax:** `random(min, max)`
 
 **Examples:**
 
 ```
-random(10)              →  7 (0 to 10)
 random(1, 100)          →  42 (1 to 100)
 random(5, 15)           →  11 (5 to 15)
 ```
@@ -755,6 +670,64 @@ Tau, equal to 2π.
 tau                     →  6.28319
 tau / 2                 →  3.14159 (pi)
 ```
+
+---
+
+### c (speed of light)
+
+The constant c that represents the speed of light.
+
+**Value:** 299,792,458
+
+**Examples:**
+
+```
+c                       →  299,792,458
+```
+
+---
+
+### R (ideal gas constant)
+
+The constant R that represents the ideal gas constant.
+
+**Value:** 8.3145
+
+**Examples:**
+
+```
+R                       →  8.3145
+```
+
+---
+
+### Na (Avogadro constant)
+
+The constant Na that represents the Avogadro constant.
+
+**Value:** 602,214,076,000,000,000,000,000
+
+**Example:**
+
+```
+Na                      →  602,214,076,000,000,000,000,000
+```
+
+---
+
+### g (standard gravity)
+
+The constant g that represents the standard gravity.
+
+**Value:**
+
+**Example:**
+
+```
+g                       →  9.80665
+```
+
+
 
 ---
 

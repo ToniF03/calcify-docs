@@ -65,8 +65,8 @@ Type the value with the unit, then the target unit:
 
 ```
 150 pounds to kg    →  68.04 kilograms
-2 tons to pounds    →  4000 pounds
-500 grams to oz     →  17.64 ounces
+2 tons to pounds    →  4,409.25 lbs
+500 grams to oz     →  17.64 oz.
 ```
 
 ### Temperature Conversion
@@ -111,6 +111,7 @@ now + 2 hours           →  [current time + 2 hours]
 
 ```
 today                   →  2025-11-02
+today.weekday           →  Monday
 now                     →  2025-11-02 14:30:45
 ```
 
@@ -129,16 +130,17 @@ ceil(3.1)               →  4
 ### Trigonometry
 
 ```
-sin(90)                 →  1
+sin(90)                 →  0.894
 cos(0)                  →  1
-tan(45)                 →  1
+tan(45)                 →  1.62
 ```
 
 ### Logarithms
 
 ```
 log(100)                →  2 (base 10)
-ln(2.718)               →  1 (natural log)
+log(100, 10)            →  2
+ln(e)                   →  1 (natural log)
 ```
 
 ## Using Variables
@@ -200,6 +202,12 @@ Speed up your workflow with these shortcuts:
 | `Ctrl + F`         | Find             |
 | `Ctrl + H`         | Find and Replace |
 | `Ctrl + ,`         | Open Settings    |
+| `Ctrl + 0`         | Reset Zoom       |
+| `Ctrl + +`         | Zoom in          |
+| `Ctrl + -`         | Zoom out         |
+| `Ctrl + D`         | Duplicate Line   |
+| `Ctrl + L`         | Delete Line      |
+| `Ctrl + /`         | Toggle Comment   |
 | `F1`               | Help             |
 
 ## Switching Themes
@@ -211,7 +219,7 @@ Calcify supports both light and dark themes:
 3. Select **Light** or **Dark** theme
 4. The theme changes immediately
 
-Or use the theme toggle button in the toolbar.
+Or use the theme toggle (sun or moon) button in the toolbar.
 
 ## Tips for Beginners
 
@@ -226,21 +234,21 @@ Or use the theme toggle button in the toolbar.
 Here's a practical example of using Calcify:
 
 ```
-// Calculate project budget
+# Calculate project budget
 materials = 2500 USD
 labor = 3000 USD
 overhead = (materials + labor) * 0.15
 total = materials + labor + overhead
 
-// Result: total = 6325 USD
+# Result: total = 6325 USD
 
-// Convert to EUR for client
+# Convert to EUR for client
 total to EUR
-// Result: ~5837.81 EUR
+# Result: ~5837.81 EUR
 
-// Calculate weekly cost
+# Calculate weekly cost
 total / 4 weeks
-// Result: 1581.25 USD per week
+# Result: 1581.25 USD per week
 ```
 
 ## Next Steps

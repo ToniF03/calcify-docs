@@ -28,10 +28,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - added a toggle button to switch the color scheme between light and dark theme
 - added the `last` keyword as an addition to the `ans` and `prev` keywords
+- added an autocompletion system
+- added time calculations
+- added time subfunctions (e.g. `time.hour`, `date.format` etc.)
+- added permutation and combination functions
+- added inline functions
+- added a status bar
+- added editor zoom
+- added a Line and Column label
+- added a recent files list
+- added the following constants `tau`, `c` (speed of light), `R` (ideal gas constant), `Na` (Avogadro constant) and `g` (standard gravity)
+- added multiple new functions
+- added multiple hotkeys
+- added a right-click-menu
 
 ### Changed
 
-- optimized data value conversion factors
+- changed data value conversion to optimize accuracy
+- changed syntax files to dynamic generation to improve flexibility
+- changed the settings windows design
+
+### Fixed
+
+- fixed `now` syntax highlighting
 
 ---
 

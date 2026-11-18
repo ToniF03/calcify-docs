@@ -137,18 +137,18 @@ The basic syntax for unit conversions is:
 ### Common Temperatures
 
 ```
-// Freezing point of water
+# Freezing point of water
 0 °C to °F              →  32 °F
 0 °C to K               →  273.15 K
 
-// Boiling point of water
+# Boiling point of water
 100 °C to °F            →  212 °F
 100 °C to K             →  373.15 K
 
-// Room temperature
+# Room temperature
 20 °C to °F             →  68 °F
 
-// Body temperature
+# Body temperature
 37 °C to °F             →  98.6 °F
 ```
 
@@ -185,13 +185,13 @@ The basic syntax for unit conversions is:
 ### Practical Examples
 
 ```
-// Download size
+# Download size
 5 GB to MB              →  5120 megabytes
 
-// File size
+# File size
 750 MB to GB            →  0.732 gigabytes
 
-// Storage capacity
+# Storage capacity
 2 TB to GB              →  2048 gigabytes
 ```
 
@@ -240,13 +240,13 @@ The basic syntax for unit conversions is:
 ### Practical Time Calculations
 
 ```
-// Project duration
+# Project duration
 90 days to weeks        →  12.857 weeks
 
-// Event countdown
+# Event countdown
 48 hours to days        →  2 days
 
-// Processing time
+# Processing time
 500 ms to seconds       →  0.5 seconds
 ```
 
@@ -297,40 +297,14 @@ pi rad to deg           →  180 degrees
 ### Practical Examples
 
 ```
-// WiFi frequency
+# WiFi frequency
 2.4 GHz to MHz          →  2400 MHz
 
-// Sound frequency
+# Sound frequency
 440 Hz to kHz           →  0.44 kHz
 
-// Processor speed
+# Processor speed
 3.5 GHz to MHz          →  3500 MHz
-```
-
-## Multiple Conversions
-
-You can chain conversions:
-
-```
-100 cm to m to feet     →  3.281 feet
-1000 g to kg to pounds  →  2.205 pounds
-24 hours to minutes to seconds
-                        →  86400 seconds
-```
-
-## Precision
-
-Control decimal precision in Settings:
-
-```
-// 2 decimal places
-10 km to miles          →  6.21 miles
-
-// 5 decimal places
-10 km to miles          →  6.21371 miles
-
-// No decimal places
-10 km to miles          →  6 miles
 ```
 
 ## Unit Aliases
@@ -338,12 +312,12 @@ Control decimal precision in Settings:
 Most units have multiple aliases:
 
 ```
-// All equivalent
+# All equivalent
 10 kilometers to miles
 10 km to miles
 10 km to mi
 
-// All equivalent
+# All equivalent
 100 kilograms to pounds
 100 kg to lbs
 100 kg to lb
@@ -355,44 +329,44 @@ Most units have multiple aliases:
 
 ```
 2 cups to ml            →  473.176 milliliters
-450°F to °C             →  232.222 °Celsius
+450 °F to °C            →  232.222 °Celsius
 1 pound to grams        →  453.592 grams
 ```
 
 ### Travel Planning
 
 ```
-// Distance
+# Distance
 500 km to miles         →  310.686 miles
 
-// Speed
+# Speed
 100 km/h to mph         →  62.137 mph
 
-// Fuel
+# Fuel
 50 liters to gallons    →  13.209 gallons
 ```
 
 ### Construction
 
 ```
-// Room dimensions
+# Room dimensions
 12 feet to meters       →  3.658 meters
 4 inches to cm          →  10.16 centimeters
 
-// Materials
+# Materials
 50 pounds to kg         →  22.68 kilograms
 ```
 
 ### Technology
 
 ```
-// Storage
+# Storage
 256 GB to TB            →  0.25 terabytes
 
-// Speed
+# Speed
 100 Mbps to Gbps        →  0.1 gigabits/second
 
-// Display
+# Display
 5.5 inches to cm        →  13.97 centimeters
 ```
 
